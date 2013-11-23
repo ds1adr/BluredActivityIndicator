@@ -7,6 +7,7 @@
 //
 
 #import "KViewController.h"
+#import "KBlusredActivityIndicatorManager.h"
 
 @interface KViewController ()
 
@@ -26,4 +27,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)startButtonClicked:(id)sender {
+    [KBlusredActivityIndicatorManager sharedManager].blurRadius = 10.0f;
+    [[KBlusredActivityIndicatorManager sharedManager] startActivityIndicatorWithView:self.view withTimeout:7.0];
+}
+
+- (IBAction)networkRequest:(id)sender {
+    // It's just example so, doen't request via network :)
+    [[KBlusredActivityIndicatorManager sharedManager] startActivityIndicatorWithView:self.textView];
+    
+    // For example, receive data from network during 5 second :)
+    [self performSelector:@selector(finishRequest) withObject:nil afterDelay:5.0f];
+}
+
+- (void) finishRequest {
+    [[KBlusredActivityIndicatorManager sharedManager] stopActivityIndicator];
+}
 @end

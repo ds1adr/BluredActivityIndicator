@@ -21,6 +21,8 @@
 		E24E72A818404CCF004CDD3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E728A18404CCF004CDD3E /* UIKit.framework */; };
 		E24E72B018404CCF004CDD3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E24E72AE18404CCF004CDD3E /* InfoPlist.strings */; };
 		E24E72B218404CCF004CDD3E /* BluredActivityIndicatorSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E24E72B118404CCF004CDD3E /* BluredActivityIndicatorSampleTests.m */; };
+		E24E72BE18404D4A004CDD3E /* KBlusredActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E24E72BD18404D4A004CDD3E /* KBlusredActivityIndicatorManager.m */; };
+		E24E72C0184054E1004CDD3E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E72BF184054E1004CDD3E /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		E24E72AD18404CCF004CDD3E /* BluredActivityIndicatorSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BluredActivityIndicatorSampleTests-Info.plist"; sourceTree = "<group>"; };
 		E24E72AF18404CCF004CDD3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E24E72B118404CCF004CDD3E /* BluredActivityIndicatorSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluredActivityIndicatorSampleTests.m; sourceTree = "<group>"; };
+		E24E72BC18404D4A004CDD3E /* KBlusredActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBlusredActivityIndicatorManager.h; sourceTree = "<group>"; };
+		E24E72BD18404D4A004CDD3E /* KBlusredActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBlusredActivityIndicatorManager.m; sourceTree = "<group>"; };
+		E24E72BF184054E1004CDD3E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24E72C0184054E1004CDD3E /* QuartzCore.framework in Frameworks */,
 				E24E728918404CCF004CDD3E /* CoreGraphics.framework in Frameworks */,
 				E24E728B18404CCF004CDD3E /* UIKit.framework in Frameworks */,
 				E24E728718404CCF004CDD3E /* Foundation.framework in Frameworks */,
@@ -82,6 +88,7 @@
 		E24E727A18404CCF004CDD3E = {
 			isa = PBXGroup;
 			children = (
+				E24E72BB18404D31004CDD3E /* BluredActivityIndicator */,
 				E24E728C18404CCF004CDD3E /* BluredActivityIndicatorSample */,
 				E24E72AB18404CCF004CDD3E /* BluredActivityIndicatorSampleTests */,
 				E24E728518404CCF004CDD3E /* Frameworks */,
@@ -101,6 +108,7 @@
 		E24E728518404CCF004CDD3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E24E72BF184054E1004CDD3E /* QuartzCore.framework */,
 				E24E728618404CCF004CDD3E /* Foundation.framework */,
 				E24E728818404CCF004CDD3E /* CoreGraphics.framework */,
 				E24E728A18404CCF004CDD3E /* UIKit.framework */,
@@ -150,6 +158,15 @@
 				E24E72AE18404CCF004CDD3E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E24E72BB18404D31004CDD3E /* BluredActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				E24E72BC18404D4A004CDD3E /* KBlusredActivityIndicatorManager.h */,
+				E24E72BD18404D4A004CDD3E /* KBlusredActivityIndicatorManager.m */,
+			);
+			path = BluredActivityIndicator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +269,7 @@
 			files = (
 				E24E729D18404CCF004CDD3E /* KViewController.m in Sources */,
 				E24E729718404CCF004CDD3E /* KAppDelegate.m in Sources */,
+				E24E72BE18404D4A004CDD3E /* KBlusredActivityIndicatorManager.m in Sources */,
 				E24E729318404CCF004CDD3E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
